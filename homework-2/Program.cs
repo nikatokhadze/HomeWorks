@@ -10,6 +10,7 @@ namespace homework_2
             Console.WriteLine("nika tokhadze");
             string text = Console.ReadLine();
             Console.WriteLine("nika tokhadze" + text);
+            Console.WriteLine("nika tokhadze");
         }
     }
 }
