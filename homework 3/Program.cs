@@ -22,13 +22,16 @@ namespace homework_3
 
                 }
                 {
-                    #region task 2
+                #region task 2
 
-                    var x = 0;
-                    var y = 9;
+                Console.WriteLine("enter x - ");   
+                var x = 0 + Convert.ToDecimal(Console.ReadLine());
+                Console.WriteLine("enter y - ");
+                var y = 0 + Convert.ToDecimal(Console.ReadLine());
 
-                    Console.WriteLine(x + y);
-                    Console.WriteLine(x * y);
+                Console.WriteLine("result:");
+                Console.WriteLine(x + y);
+                Console.WriteLine(x * y);
                     if (x < y)
                         Console.WriteLine(y - x);
                     else
