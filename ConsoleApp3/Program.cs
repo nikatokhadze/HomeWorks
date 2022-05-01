@@ -6,70 +6,84 @@ namespace ConsoleApp3
     {
         static void Main(string[] args)
         {
-            { 
-              #region 
-               // task 1
+            {
+                #region task 1
 
-            
-                //int num = 10;
+                Console.WriteLine("enter number - ");
+                var number = Convert.ToDecimal(Console.ReadLine());
+                Console.WriteLine("divided to 5 ? ");
+                if (number % 5 == 0)
+                    Console.WriteLine("YES");
+                else
+                    Console.WriteLine("NO");
 
-                //if (num % 5 == 0)
-                //    Console.WriteLine("yes");
-                //else
-                //    Console.WriteLine("no");
-            
-                //int num1 = 44;
-
-                //if (num1 % 5 == 0)
-                //    Console.WriteLine("yes");
-                //else
-                //    Console.WriteLine("no");
                 #endregion
             }
-
             {
-                #region
-                // task 2
+                #region task 2
 
-                //var x = 5m;
-                //var y = 10m;
-               
+                var x = 0;
+                var y = 9;
                 
-                //Console.WriteLine(x + y);
-                //Console.WriteLine(x - y);
-                //Console.WriteLine(x / y);
-                //Console.WriteLine(x * y);
-
-
-            
-                #endregion
-            }
-            {
-                #region
-                // task 3
-                //var a = 9;
-                //var b = 10;
-                //Console.WriteLine((a, b) = (b,a));
-                #endregion
-            }
-            {
-                #region
-                var n = 7;
-                var i = 0;
-                while (i < 10)
+                Console.WriteLine(x + y);
+                Console.WriteLine(x * y);
+                if (x<y)
+                    Console.WriteLine(y - x);
+                else
+                    Console.WriteLine(x - y);
+                try
                 {
-                    i++;
-                    Console.WriteLine($"{n} * {i} = {n*i}");
+                    if (x < y)
+                    {
+                        Console.WriteLine(y / x);
+                    }
+                    else
+                    {
+                        Console.WriteLine(x / y);
+                    }
+                }
+                catch (DivideByZeroException)
+                {
+                    Console.WriteLine("Not Allowed To Divide By Zero");
+                }
+
+                #endregion
+            }
+            {
+                #region task 3
+
+                Console.WriteLine("enter x - ");
+                var x = Convert.ToDecimal(Console.ReadLine());
+                Console.WriteLine("enter y - ");
+                var y = Convert.ToDecimal(Console.ReadLine());
+                Console.WriteLine($"y  and x - {(x, y) = (y, x)}");
+
+                #endregion
+            }
+            {
+                #region task 4
+
+                Console.WriteLine("enter number - ");
+                var i = Convert.ToDecimal(Console.ReadLine());
+                var u = 0;
+                Console.WriteLine("multiplication tabel");
+                while (u < 10)
+                {
+                    u++;
+                    Console.WriteLine($"{i} * {u} = {i * u}");
                 }
                 #endregion
             }
             {
-                #region
+                #region task 5
+                Console.WriteLine("Write Number - ");
+                var a = Convert.ToDecimal(Console.ReadLine());
+                var b = 0;
 
-                //for (var i = 0; i < 10; i+=2)
-                //{
-                //    Console.WriteLine(i*i);
-
+                while (b < a)
+                {
+                    b += 2;
+                    Console.WriteLine(b * b);
                 }
                 #endregion
             }
