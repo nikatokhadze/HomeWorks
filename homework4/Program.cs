@@ -68,41 +68,29 @@ namespace homework4
 
             #region task 3
 
-            var babys = new List<int>();
-            babys.Add(1);
-            babys.Add(2);
-            babys.Add(3);
-            babys.Add(4);
-            babys.Add(5);
-            babys.Add(6);
-            babys.Add(7);
-            babys.Add(8);
-            babys.Add(9);
-            babys.Add(10);
+            //var babys = new List<int>();
+            //babys.Add(1);
+            //babys.Add(2);
+            //babys.Add(3);
+            //babys.Add(4);
+            //babys.Add(5);
+            //babys.Add(6);
+            //babys.Add(7);
+            //babys.Add(8);
+            //babys.Add(9);
+            //babys.Add(10);
 
-            Console.Write("top must be displayed : ");
-            int m = Convert.ToInt32(Console.ReadLine());
-         
-            babys.Reverse();
+            //Console.Write("top must be displayed : ");
+            //int m = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write($"The top {m} are: \n");
-            foreach (int candy in babys.Take(m))
-            {
-                Console.WriteLine(candy);
-            }
-            Console.ReadLine();
+            //babys.Reverse();
 
-
-
-
-
-
-
-
-
-
-
-
+            //Console.Write($"The top {m} are: \n");
+            //foreach (int candy in babys.Take(m))
+            //{
+            //    Console.WriteLine(candy);
+            //}
+            //Console.ReadLine();
 
             #endregion
         }
