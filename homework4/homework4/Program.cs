@@ -11,6 +11,7 @@ namespace homework4
 
         static void Main(string[] args)
         {
+
             #region task 1
 
             //int array;
@@ -105,6 +106,7 @@ namespace homework4
 
 
             #endregion
+
         }
     }
 
