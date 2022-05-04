@@ -70,6 +70,7 @@ namespace homework4
             #region task 3
 
             var babys = new List<int>();
+
             babys.Add(1);
             babys.Add(2);
             babys.Add(3);
